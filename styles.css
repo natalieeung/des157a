@@ -53,6 +53,10 @@ h2 {
     text-align: center;
 }
 
+a {
+    font-size: 12px;
+}
+
 /**Name**/
 #name {
     flex: 1;
@@ -61,26 +65,41 @@ h2 {
 /**Work**/
 #work {
     flex: 1;
-    justify-content: flex-end;
     display: flex;
-    flex-direction: row;
-    gap: 30px;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
 #work div {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 #work div ul {
     list-style: none;
-    text-align: center;
-    line-height: 1.5em;
+    padding: 0;
+    margin-top: 2.5px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
 }
 
 #work div ul li {
-    flex: 1;
+    background-color: #2E2E2E;
+    color: #FFFFFF;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 60px;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    display: flex; /* Make li a flex container */
+    justify-content: center;
+    align-items: center; 
 }
 
 #work div ul li.placeholder {
