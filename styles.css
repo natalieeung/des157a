@@ -55,6 +55,8 @@ h2 {
 
 a {
     font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 /**Name**/
@@ -101,6 +103,19 @@ a {
     justify-content: center;
     align-items: center; 
 }
+
+#work .red {
+    background-color: #DB1742;
+} 
+
+#work .yellow {
+    background-color: #E3B41A;
+} 
+
+#work .blue {
+    background-color: #34B8A8;
+} 
+
 
 #work div ul li.placeholder {
     visibility: hidden;
