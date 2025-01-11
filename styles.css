@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%; /* Full height for the flex container */
+    height: 100%;
 }
 
 h1, h2, h3, p, a, ul {
@@ -25,8 +25,8 @@ main {
     flex-direction: row;
     flex: 3;
     gap: 40px;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 150px;
+    margin-left: 150px;
 }
 
 /**Typography**/
@@ -62,6 +62,25 @@ a {
 /**Name**/
 #name {
     flex: 1;
+}
+
+#lastname{
+    animation: colorchange 15s infinite ease-in-out;
+}
+
+@keyframes colorchange {
+    0% {
+        color: #E3B41A;
+    }
+    40% {
+        color: #34B8A8;
+    }
+    80% {
+        color: #DB1742;
+    }
+    100% {
+        color: #E3B41A
+    }
 }
 
 /**Work**/
