@@ -1,0 +1,100 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Full height for the flex container */
+}
+
+h1, h2, h3, p, a, ul {
+    margin: 0;
+    padding: 0;
+} 
+    
+
+body {
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex: 1;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: 3;
+    gap: 40px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+/**Typography**/
+h1, h2, h3, p, a {
+    font-family: "Inter";
+    color: white;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#work div h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+/**Name**/
+#name {
+    flex: 1;
+}
+
+/**Work**/
+#work {
+    flex: 1;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#work div {
+    flex: 1;
+}
+
+#work div ul {
+    list-style: none;
+    text-align: center;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+#work div ul li {
+    flex: 1;
+}
+
+#work div ul li.placeholder {
+    visibility: hidden;
+}
+
+/**Footer**/
+
+footer {
+    background-color: #2E2E2E;
+    padding: 20px 0px 15px 0px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+}
