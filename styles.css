@@ -29,14 +29,33 @@ header {
 header img {
     height: 100px;
     width: auto;
-    transition: transform 0.2s ease-in-out; 
+    transition: transform 0.05s ease-in-out; 
     transform-origin: center
 }
 
 header img:hover {
-    transform: scale(1.2);
+    transform: scale(1.5);
 }
 
+.one {
+    position: relative;
+    top: 20px;
+}
+
+.two {
+    position: relative;
+    top: 10px;
+}
+
+.three {
+    position: relative;
+    top: -5px;
+}
+
+.four {
+    position: relative;
+    top: -20px;
+}
 /**Main**/
 
 main {
