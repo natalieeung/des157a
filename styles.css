@@ -20,7 +20,7 @@ body {
 
 header {
     flex: 1;
-    margin: 40px 150px 0px 150px;
+    margin: 50px 150px 0px 150px;
     display: flex;
     gap: 15px;
     justify-content: center;
@@ -148,8 +148,6 @@ a {
 }
 
 #work div ul li {
-    background-color: #2E2E2E;
-    color: #FFFFFF;
     padding: 10px;
     margin-top: 10px;
     border-radius: 60px;
@@ -168,11 +166,11 @@ a {
 } 
 
 #work .yellow {
-    background-color: #E3B41A;
+    background-color: #ca9f14;
 } 
 
 #work .blue {
-    background-color: #34B8A8;
+    background-color: #2d9c8f;
 } 
 
 #work div ul li.placeholder {
