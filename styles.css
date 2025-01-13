@@ -102,7 +102,7 @@ a {
     flex: 1;
 }
 
-#lastname{
+#lastname h1 {
     animation: colorchange 15s infinite ease-in-out;
 }
 
