@@ -1,194 +1,194 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-h1, h2, h3, p, a, ul {
-    margin: 0;
-    padding: 0;
-} 
-    
-
-body {
-    background-color: #1C1C1C;
-    display: flex;
-    flex-direction: column;
-}
-
-/**Header**/
-
-header {
-    flex: 1;
-    margin: 50px 150px 0px 150px;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-}
-
-header img {
-    height: 100px;
-    width: auto;
-    transition: transform 0.05s ease-in-out; 
-    transform-origin: center
-}
-
-header img:hover {
-    transform: scale(1.5);
-}
-
-.one {
-    position: relative;
-    top: 20px;
-}
-
-.two {
-    position: relative;
-    top: 10px;
-}
-
-.three {
-    position: relative;
-    top: -5px;
-}
-
-.four {
-    position: relative;
-    top: -20px;
-}
-/**Main**/
-
-main {
-    display: flex;
-    flex-direction: row;
-    flex: 3;
-    gap: 40px;
-    margin-right: 150px;
-    margin-left: 150px;
-}
-
-/**Typography**/
-h1, h2, h3, p, a {
-    font-family: "Inter";
-    color: white;
-}
-
-h1 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 80px;
-}
-
-h2 {
-    font-weight: 500;
-    font-size: 20px;
-}
-
-#work div h3 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    text-align: center;
-}
-
-a {
-    font-size: 12px;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-/**Name**/
-#name {
-    flex: 1;
-}
-
-#lastname h1 {
-    animation: colorchange 15s infinite ease-in-out;
-}
-
-@keyframes colorchange {
-    0% {
-        color: #E3B41A;
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
     }
-    40% {
-        color: #34B8A8;
+
+    h1, h2, h3, p, a, ul {
+        margin: 0;
+        padding: 0;
+    } 
+        
+
+    body {
+        background-color: #1C1C1C;
+        display: flex;
+        flex-direction: column;
     }
-    80% {
-        color: #DB1742;
+
+    /**Header**/
+
+    header {
+        flex: 1;
+        margin: 50px 150px 0px 150px;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
     }
-    100% {
-        color: #E3B41A
+
+    header img {
+        height: 100px;
+        width: auto;
+        transition: transform 0.05s ease-in-out; 
+        transform-origin: center
     }
-}
 
-/**Work**/
-#work {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-}
+    header img:hover {
+        transform: scale(1.5);
+    }
 
-#work div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
+    .one {
+        position: relative;
+        top: 20px;
+    }
 
-#work div ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 2.5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    width: 100%;
-}
+    .two {
+        position: relative;
+        top: 10px;
+    }
 
-#work div ul li {
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 60px;
-    text-align: center;
-    width: 80px;
-    height: 80px;
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-    transition: transform 0.3s ease-in-out; 
-    transform-origin: center
-}
+    .three {
+        position: relative;
+        top: -5px;
+    }
 
-#work .red {
-    background-color: #DB1742;
-} 
+    .four {
+        position: relative;
+        top: -20px;
+    }
+    /**Main**/
 
-#work .yellow {
-    background-color: #ca9f14;
-} 
+    main {
+        display: flex;
+        flex-direction: row;
+        flex: 3;
+        gap: 40px;
+        margin-right: 150px;
+        margin-left: 150px;
+    }
 
-#work .blue {
-    background-color: #2d9c8f;
-} 
+    /**Typography**/
+    h1, h2, h3, p, a {
+        font-family: "Inter";
+        color: white;
+    }
 
-#work div ul li.placeholder {
-    visibility: hidden;
-}
+    h1 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 80px;
+    }
 
-#work div ul li:hover {
-    transform: scale(1.15);
-}
+    h2 {
+        font-weight: 500;
+        font-size: 20px;
+    }
 
-/**Footer**/
+    #work div h3 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+    }
 
-footer {
-    background-color: #2E2E2E;
-    padding: 20px 0px 15px 0px;
-}
+    a {
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+    }
 
-footer p {
-    text-align: center;
-    font-size: 14px;
-}
+    /**Name**/
+    #name {
+        flex: 1;
+    }
+
+    #lastname h1 {
+        animation: colorchange 15s infinite ease-in-out;
+    }
+
+    @keyframes colorchange {
+        0% {
+            color: #E3B41A;
+        }
+        40% {
+            color: #34B8A8;
+        }
+        80% {
+            color: #DB1742;
+        }
+        100% {
+            color: #E3B41A
+        }
+    }
+
+    /**Work**/
+    #work {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    #work div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #work div ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 2.5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        width: 100%;
+    }
+
+    #work div ul li {
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 60px;
+        text-align: center;
+        width: 80px;
+        height: 80px;
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+        transition: transform 0.3s ease-in-out; 
+        transform-origin: center
+    }
+
+    #work .red {
+        background-color: #DB1742;
+    } 
+
+    #work .yellow {
+        background-color: #ca9f14;
+    } 
+
+    #work .blue {
+        background-color: #2d9c8f;
+    } 
+
+    #work div ul li.placeholder {
+        visibility: hidden;
+    }
+
+    #work div ul li:hover {
+        transform: scale(1.15);
+    }
+
+    /**Footer**/
+
+    footer {
+        background-color: #2E2E2E;
+        padding: 20px 0px 15px 0px;
+    }
+
+    footer p {
+        text-align: center;
+        font-size: 14px;
+    }
