@@ -43,6 +43,7 @@ time {
     font-family: "Inter";
     font-size: 12px;
     color: rgb(195, 195, 195);
+    line-height: 4em;
 }
 
 p {
@@ -94,7 +95,7 @@ ul li {
 
 .article {
     margin: 0; 
-    padding: 20px;
+    padding: 30px;
     border-radius: 20px;
     background-color: #2E2E2E;
 }
