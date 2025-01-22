@@ -1,0 +1,119 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1, h2, h3, p, a, ul {
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 10px 300px 20px 300px;
+    padding-bottom: 20px;
+}
+
+h1, h2, h3, p, a {
+    font-family: "Inter";
+    color: white;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 65px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+time {
+    font-family: "Inter";
+    font-size: 12px;
+    color: rgb(195, 195, 195);
+    line-height: 3em;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+a {
+    font-weight: 500;
+    color: #E3B41A;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2.5px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}
+
+ul li {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 60px;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    display: grid; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.red {
+    background-color: #DB1742;
+}
+
+.yellow {
+    background-color: #E3B41A;
+}
+
+.blue {
+    background-color: #34B8A8;
+}
+
+.article {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #2E2E2E;
+}
+
+.article h2 {
+    align-items: flex-start;
+}
+
+section {
+    padding-bottom: 10px;
+}
+
+
+img {
+    position: relative;
+    top: 150px;
+    height: 500px;
+    width: auto;
+    border-radius: 20px;
+}
