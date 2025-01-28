@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+
+    <style>
+        body {
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Experiment 2</h1>
+    <p id="message">Enter a color and the background will change accordingly!</p>
+
+    <script>
+        //This is a program that asks users to input their favorite color from a list of colors, then change the background color of the page to that color. 
+
+        var color = ["red", "orange", "yellow", "green", "blue", "purple", "pink", "black", "white", "brown"];
+
+        var colorList = "";
+
+        for (var i = 0; i < color.length; i++) {
+            colorList += color[i] + "\n";
+        }
+
+        function getUserColor() {
+            var userColor = prompt("Please enter your favorite color from the following list: " + colorList);
+            
+            if (userColor) {
+                return userColor.toLowerCase();
+            } else {
+                return "";
+            }
+        }   
+      
+        function changeBackgroundColor() {
+            var userColor = getUserColor();
+
+            if (color.includes(userColor)) {
+                document.body.style.backgroundColor = userColor;
+                document.querySelector('#message').textContent = `Nice ${userColor} background!`;
+            } else {
+                document.querySelector('#message').textContent = "That color is not on the list! Please try again.";
+            }
+        }
+
+        changeBackgroundColor();
+    </script>
+    
+</body>
+</html>
