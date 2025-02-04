@@ -1,0 +1,170 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1, h2, h3, p, a, ul {
+    margin: 0;
+    padding: 0;
+} 
+
+/* Typography */
+h1 {
+    font-family: "Playwrite US Trad", serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: #D63F74;
+    line-height: 1.75em;
+}
+
+h2 {
+    font-family: "Gabarito", serif;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-family: "Gabarito", serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 4px;
+    line-height: 1.5em;
+    text-transform: uppercase;
+}
+
+
+body {
+    background-color: #FFFAF5;
+}
+
+main {
+    margin: 4vw 15vh;
+    display: flex;
+    gap: 30px;
+}
+
+.middle {
+    background-color: #FFCEDD;
+    border-radius: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cakes {
+    flex: 1;
+    height: 200px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #F9F2EA;
+    border-radius: 20px;
+    border-bottom: 20px solid #EBCAA1;
+}
+
+.ingredients {
+    flex: 1;
+    height: 200px;
+    background-color: #F9F2EA;
+    border-radius: 20px;
+    border-top: 20px solid #F485AC;
+}
+
+img {
+    height: 150px;
+    width: auto;
+}
+
+/* Title 1 */
+#title1 {
+    flex: 1;
+    display: none;
+    flex-direction: column;
+    gap: 22.5px;
+    background-color: #FFFAF5;
+    height: 600px;
+}
+
+
+/* Title 2 */
+#title2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #FFFAF5;
+    height: 600px;
+}
+
+/* Stepper */
+.stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.step {
+    width: 30px;
+    height: 30px;
+    background-color: #D5D1C0;
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Gabarito", serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.line {
+    margin-top: 20px;
+    width: 140px;
+    height: 5px;
+    background-color: #D5D1C0;
+}
+
+.step.active {
+    background-color: #D63F74;
+}
+
+/* Form 1 */
+#form1 {
+    display: none;
+    flex: 1;
+    background-color: #F9F2EA;
+    border-radius: 20px;
+    border-top: solid 25px #F485AC;
+    height: 575px;
+}
+
+/* Form 2 */
+#form2 {
+    display: block;
+    flex: 1;
+    background-color: #F9F2EA;
+    border-radius: 20px;
+    border-top: solid 25px #F485AC;
+    height: 575px;
+}
+
+/* Form 3 */
+#form3 {
+    display: none;
+    flex: 1;
+    background-color: #F9F2EA;
+    border-radius: 20px;
+    border-top: solid 25px #F485AC;
+    height: 575px;
+}
+
+/* Recipe */
