@@ -36,6 +36,25 @@ h3 {
     text-transform: uppercase;
 }
 
+label {
+    font-family: "Gabarito", serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    color: #6c5d5d;
+}
+
+p {
+    font-family: "Gabarito", serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    color: #826F6F;
+}
+
+/* Other */
 
 body {
     background-color: #FFFAF5;
@@ -85,7 +104,7 @@ img {
 /* Title 1 */
 #title1 {
     flex: 1;
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 22.5px;
     background-color: #FFFAF5;
@@ -96,7 +115,7 @@ img {
 /* Title 2 */
 #title2 {
     flex: 1;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 20px;
     background-color: #FFFAF5;
@@ -104,7 +123,7 @@ img {
 }
 
 /* Stepper */
-.stepper {
+/* .stepper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,26 +154,85 @@ img {
 
 .step.active {
     background-color: #D63F74;
+} */
+
+/* General Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+input {
+    background-color: #FFFFFF;
+    border: 2px solid #e7e7e7;
+    border-radius: 10px;
+    height: 30px;
+    padding: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #F485AC;
+}
+
+input, textarea select {
+    font-family: "Gabarito", serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    color: #826F6F;
+}
+
+input::placeholder {
+    color: #bca9a9;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+button {
+    position: absolute;
+    bottom: -75px;
+    right: 0px;
+    background-color: #D63F74;
+    padding: 5px 30px 10px 30px;
+    font-family: "Playwrite US Trad", serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
 
 /* Form 1 */
 #form1 {
-    display: none;
+    display: block;
     flex: 1;
     background-color: #F9F2EA;
+    box-sizing: border-box;
     border-radius: 20px;
     border-top: solid 25px #F485AC;
-    height: 575px;
+    height: 600px;
+    padding: 20px 60px;
 }
 
 /* Form 2 */
 #form2 {
-    display: block;
+    display: none;
     flex: 1;
     background-color: #F9F2EA;
+    box-sizing: border-box;
     border-radius: 20px;
     border-top: solid 25px #F485AC;
-    height: 575px;
+    height: 600px;
+    padding: 20px 60px;
 }
 
 /* Form 3 */
@@ -162,9 +240,40 @@ img {
     display: none;
     flex: 1;
     background-color: #F9F2EA;
+    box-sizing: border-box;
     border-radius: 20px;
     border-top: solid 25px #F485AC;
-    height: 575px;
+    height: 600px;
+    padding: 20px 60px;
+}
+
+#submit {
+    position: absolute;
+    bottom: -75px;
+    right: 0px;
+    background-color: #D63F74;
+    padding: 5px 30px 35px 30px;
+    font-family: "Playwrite US Trad", serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#submit:hover {
+    transform: scale(1.1);
 }
 
 /* Recipe */
+#result {
+    display: none;
+    flex: 1;
+    background-color: #F9F2EA;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-top: solid 25px #F485AC;
+    height: 600px;
+    padding: 20px 60px;
+}
