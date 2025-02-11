@@ -122,11 +122,12 @@ img {
     height: 600px;
 }
 
-/* Stepper */
-/* .stepper {
+/* Progress Bar */
+.stepper {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -137,7 +138,6 @@ img {
     color: #FFFFFF;
     border-radius: 50%;
     display: flex;
-    margin-top: 20px;
     align-items: center;
     justify-content: center;
     font-family: "Gabarito", serif;
@@ -146,17 +146,20 @@ img {
 }
 
 .line {
-    margin-top: 20px;
-    width: 140px;
+    width: 150px;
     height: 5px;
     background-color: #D5D1C0;
 }
 
 .step.active {
     background-color: #D63F74;
-} */
+}
 
-/* General Form */
+.line.active {
+    background-color: #D63F74;
+}
+
+
 form {
     display: flex;
     flex-direction: column;
@@ -213,7 +216,7 @@ button:hover {
 
 /* Form 1 */
 #form1 {
-    display: block;
+    display: none;
     flex: 1;
     background-color: #F9F2EA;
     box-sizing: border-box;
@@ -225,7 +228,7 @@ button:hover {
 
 /* Form 2 */
 #form2 {
-    display: none;
+    display: block;
     flex: 1;
     background-color: #F9F2EA;
     box-sizing: border-box;
