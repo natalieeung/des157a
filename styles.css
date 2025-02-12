@@ -97,6 +97,13 @@
         text-decoration: none;
     }
 
+    .email {
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        color:#2d9c8f;
+    }
+
     /**Name**/
     #name {
         flex: 1;
