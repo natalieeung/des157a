@@ -16,7 +16,7 @@
     let color = "";
     let noun3 = "";
 
-    // Form 1 submission
+    // Handling form 1 submission
     document.getElementById("next1").addEventListener("click", function (event) {
         event.preventDefault();
         noun1 = document.getElementById("noun1").value;
@@ -24,11 +24,16 @@
         adverb = document.getElementById("adverb").value;
         adjective = document.getElementById("adjective").value;
 
+        if (noun1 === "" || noun2 === "" || adverb === "" || adjective === "") {
+            alert("Looks like you forgot something! Can’t bake a cake without all your ingredients!");
+            return;
+        }
+
         document.getElementById("form1").style.display = "none";
         document.getElementById("form2").style.display = "block";
     });
 
-    // Form 2 submission
+    // Handling form 2 submission
     document.getElementById("next2").addEventListener("click", function (event) {
         event.preventDefault();
         number1 = document.getElementById("number1").value;
@@ -36,16 +41,26 @@
         emotion = document.getElementById("emotion").value;
         shape = document.getElementById("shape").value;
 
+        if (number1 === "" || container === "" || emotion === "" || shape === "") {
+            alert("Looks like you forgot something! Can’t bake a cake wihtout all your ingredients!");
+            return;
+        }
+
         document.getElementById("form2").style.display = "none";
         document.getElementById("form3").style.display = "block";
     });
 
-    // Form 3 submission
+    // Handling form 3 submission
     document.getElementById("submit").addEventListener("click", function (event) {
         event.preventDefault();
         number2 = document.getElementById("number2").value;
         color = document.getElementById("color").value;
         noun3 = document.getElementById("noun3").value;
+
+        if (number2 === "" || color === "" || noun3 === "") {
+            alert("Looks like you forgot something! Can’t bake a cake wihtout all your ingredients!");
+            return;
+        }
 
         // Updating the result section for unique elements  
         document.querySelector(".adverb-span").textContent = adverb;
@@ -61,7 +76,7 @@
         let color_list = document.querySelectorAll(".color-span");
         let noun3_list = document.querySelectorAll(".noun3-span");
 
-        // Loop through and update the text of elements that share same classes
+        // Loop through and update the textContent of elements that share same classes
         noun1_list.forEach(space => space.textContent = noun1);
         noun2_list.forEach(space => space.textContent = noun2);
         adj_list.forEach(space => space.textContent = adjective);
