@@ -97,11 +97,11 @@
         text-decoration: none;
     }
 
-    .email {
+    #email {
         font-size: 14px;
         font-weight: 500;
         text-decoration: none;
-        color:#2d9c8f;
+        color:#ca9f14;
     }
 
     /**Name**/
@@ -191,7 +191,7 @@
     /**Footer**/
 
     footer {
-        background-color: #2E2E2E;
+        background-color: #212121;
         padding: 15px 0px 15px 0px;
     }
 
