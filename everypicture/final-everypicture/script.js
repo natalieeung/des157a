@@ -33,7 +33,11 @@ window.addEventListener('load', function () {
         if (counter != prevCounter) {
             // do stuff to the page here
             console.log(`do something for section ${counter}`);
-            body.style.backdropFilter = "blur(0px)";
+            /* body.style.backdropFilter = "blur(0px)"; */
+
+            const clarity = `bglens${counter}`;
+            document.querySelector('body').className = clarity;
+
             prevCounter = counter;
         }
 

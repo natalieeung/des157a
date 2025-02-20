@@ -90,3 +90,14 @@ section {
 }
 
 /* Footer */
+
+
+/* Animations */
+.bglens1 { backdrop-filter: blur(10px); transition: all 1s;}
+.bglens2 { backdrop-filter: blur(0px);; transition: all 1s;}
+.bglens3 { backdrop-filter: blur(6px);; transition: all 1s;}
+.bglens4 { backdrop-filter: blur(0px); transition: all 1s;}
+.bglens5 { backdrop-filter: blur(8px);; transition: all 1s;}
+.bglens6 { backdrop-filter: blur(0px); transition: all 1s;}
+.bglens7 { backdrop-filter: blur(10px);; transition: all 1s;}
+.bglens8 { backdrop-filter: blur(0px);; transition: all 1s;}
