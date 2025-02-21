@@ -41,29 +41,8 @@ window.addEventListener('load', function () {
             prevCounter = counter;
         }
 
-        
     
     });
     
     
-   /*  window.addEventListener('scroll', function () {
-        pagetop = window.scrollY + 100;
-        pagetop = window.scrollY + 100;
-
-        if (pagetop > sectionTops[counter]) {
-            counter++;
-        }
-        else if (counter > 1 && pagetop < sectionTops[counter - 1]) {
-            counter--;
-        }
-        
-        if (counter != prevCounter) {
-            body.style.backdropFilter = "blur(5px)";
-            prevCounter = counter;
-        }
-
-    }); */
-    
-    //"
-    //no code past here
 });
