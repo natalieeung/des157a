@@ -19,6 +19,16 @@ h2 {
     font-size: 25px;
 }
 
+h3 {
+    font-family: "Poppins", serif;
+    text-transform: uppercase;
+    color: #FF085A;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-size: 18px;
+    line-height: 0.1em;
+}
+
 p {
     font-family: "Poppins", serif;
     font-weight: 600;
@@ -29,12 +39,17 @@ p {
     line-height: 1.5em;
 }
 
+i {
+    color: #F5F5F5;
+    font-size: 12px;
+}
+
 b {
     font-family: "Poppins", serif;
-    font-weight: 800;
+    font-weight: 850;
     font-size: 16px;
     font-style: italic;
-    color: #dd0d53;
+    color: #6461c5;
 }
 
 strong {
@@ -42,7 +57,7 @@ strong {
     font-weight: 800;
     font-size: 16px;
     font-style: italic;
-    color: #6461c5;
+    color: #EDFE00;
 }
 
 /* Header */
@@ -52,7 +67,6 @@ header {
     position: sticky;
     top: 0;
     padding-top: 20px;
-    z-index: 3;
 }
 
 .instructions {
@@ -90,33 +104,51 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    z-index: 2;
 }
 
 section img {
+    position: relative;
+    margin: auto;
     height: 100px;
+    display: block;
+    z-index: 50;
+}
+/* Popup */
+.popup {
+    display: none;
+    position: absolute;
+    top: 25vh;
+    right: 10vw;
+    background-color: rgba(217, 217, 217, 0.2);
+    padding: 5px 15px;
+    border-radius: 15px;
+    text-align: left;
+    width: 25vw;
+    z-index: 25;
+}
+
+.popup div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Footer */
+
 footer {
     display: flex;
+    justify-content: center;
     position: sticky;
     bottom: 0;
-    justify-content: center;
-   
-}
-
-footer img {
     height: 500px;
-    z-index: 1;
 }
 
 /* Animations */
 .bglens1 { backdrop-filter: blur(10px); transition: all 1s;}
-.bglens2 { backdrop-filter: blur(0px); transition: all 1s;}
+.bglens2 { display: block; backdrop-filter: blur(0px); transition: all 1s;}
 .bglens3 { backdrop-filter: blur(6px); transition: all 1s;}
-.bglens4 { backdrop-filter: blur(0px); transition: all 1s;}
+.bglens4 { display: block; backdrop-filter: blur(0px); transition: all 1s;}
 .bglens5 { backdrop-filter: blur(8px); transition: all 1s;}
-.bglens6 { backdrop-filter: blur(0px) brightness(60%); transition: all 1s;}
+.bglens6 { display: block; backdrop-filter: blur(0px) brightness(60%); transition: all 1s;}
 .bglens7 { backdrop-filter: blur(10px); transition: all 1s;}
-.bglens8 { backdrop-filter: blur(0px);; transition: all 1s;}
+.bglens8 { display: block;backdrop-filter: blur(0px);; transition: all 1s;}
