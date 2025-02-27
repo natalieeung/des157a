@@ -67,6 +67,7 @@ header {
     position: sticky;
     top: 0;
     padding-top: 20px;
+    z-index: 3;
 }
 
 .instructions {
@@ -104,6 +105,7 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
+    z-index: 2;
 }
 
 section img {
@@ -111,7 +113,6 @@ section img {
     margin: auto;
     height: 100px;
     display: block;
-    z-index: 50;
 }
 /* Popup */
 .popup {
@@ -141,6 +142,7 @@ footer {
     position: sticky;
     bottom: 0;
     height: 500px;
+    z-index: 1;
 }
 
 /* Animations */

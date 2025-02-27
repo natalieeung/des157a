@@ -4,8 +4,10 @@ window.addEventListener('load', function () {
     
     const sections = document.querySelectorAll('section');
     const body = document.querySelector('body');
-    const glasses = document.querySelectorAll('section img');
-    const popup = document.querySelectorAll('.popup');
+
+    const glassesImagesIds = ['round-glasses', 'clear-glasses', 'sunglasses', 'rect-glasses'];
+
+
     let sectionTops = [];
     let pagetop;
     let counter = 0;
@@ -18,9 +20,8 @@ window.addEventListener('load', function () {
     
     console.log(sectionTops);
 
-    // Scroll event handler
     window.addEventListener('scroll', function () {
-        pagetop = window.scrollY + 100;
+        pagetop = window.scrollY + 500;
 
         if (pagetop > sectionTops[counter]) {
             counter++;
@@ -36,14 +37,33 @@ window.addEventListener('load', function () {
 
             prevCounter = counter;
         }
+
+    function add_popup_listeners(image) {
+
+        const glassImage = document.querySelector(`#${image}`);
+        const popupBox = document.querySelector(`#popup-${image}`);
+        const closeButton = popupBox.querySelector('.fa-x');
+
+        glassImage.addEventListener('click', function() {
+            console.log(`${image} clicked`);
+            popupBox.style.display = 'block'; // Show the popup box
+            body.style.overflow = 'hidden'; // Disable scrolling
+        });
+
+        closeButton.addEventListener('click', function() {
+            console.log(`Close button clicked for #popup-${image}`);
+            popupBox.style.display = 'none'; // Hide the popup box
+            body.style.overflow = 'auto'; // Re-enable scrolling
+        });
+
+    }
+
+    glassesImagesIds.forEach(function(image) {
+        add_popup_listeners(image);
+    });
+    
+
     });
 
-    glasses.forEach((glass, index) => {
-        glass.addEventListener('click', function () {
-            console.log(`Image ${index} clicked`);
-            if (popups[index]) {
-                popups[index].style.display = 'block';
-            }
-        });
-    });
+    
 });
