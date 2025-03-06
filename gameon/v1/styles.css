@@ -1,0 +1,55 @@
+body {
+    background-color: #D1F0DE;
+}
+
+/* Typography */
+h1 {
+    font-family: "JetBrains Mono", monospace;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #5B1B1B;
+    line-height: 0em;
+}
+
+h2 {
+    font-family: "JetBrains Mono", monospace;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #6E8B7A;
+}
+
+/* Buttons */
+#buttons {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#leftBtns {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+#quit, #help, #sound {
+    background-color: #AFD6C0;
+    border: none;
+    border-radius: 5px;
+    color: #FFFCF3;
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+#roll {
+    background-color: #E9704F;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Title */
+#title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
