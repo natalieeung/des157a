@@ -8,6 +8,9 @@
     const score = document.querySelector('#score');
     const actionArea = document.querySelector('#actions');
 
+    /* Slider */    
+
+
     const gameData = {
         dice: ['1die.jpg', '2die.jpg', '3die.jpg', 
                '4die.jpg', '5die.jpg', '6die.jpg'],
