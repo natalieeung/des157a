@@ -9,11 +9,31 @@
     const actionArea = document.querySelector('#actions');
 
     /* Slider */    
+    const sliderContent = document.querySelector('.a');
 
+    // How wide is the original set of images?
+    const sliderWidth = sliderContent.offsetWidth;
+
+    // clone the set of images and assign them the class name of '.b'
+    const cloned = sliderContent.cloneNode(true);
+    cloned.className = "b";
+
+    // add the clone to the DOM
+    document.querySelector('#slider').appendChild(cloned);
+
+    //get the :root element
+    let root = document.querySelector(':root');
+
+    // set the end of the left position based on the width of the slider
+    const endLeftPos = `-${sliderWidth}px`;    
+    root.style.setProperty('--sliderwidth', endLeftPos);
+
+    //Add the animate class to start animating the slider
+    document.querySelector('#slider').classList.add("animate");
 
     const gameData = {
-        dice: ['1die.jpg', '2die.jpg', '3die.jpg', 
-               '4die.jpg', '5die.jpg', '6die.jpg'],
+        dice: ['1die.png', '2die.png', '3die.png', 
+               '4die.png', '5die.png', '6die.png'],
         players: ['player 1', 'player 2'],
         score: [0, 0],
         roll1: 0,
