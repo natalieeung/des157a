@@ -18,6 +18,26 @@ h2 {
     color: #6E8B7A;
 }
 
+h3 {
+    font-family: "JetBrains Mono", monospace;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #6E8B7A;
+    line-height: 0em;
+}
+
+p {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    color: #5B1B1B;
+}
+
+i {
+    font-family: "JetBrains Mono", monospace;
+    color: #FFFCF3;
+    font-size: 18px;
+}
+
 /* Buttons */
 #buttons {
     padding: 0px 20px;
@@ -31,14 +51,25 @@ h2 {
     gap: 5px
 }
 
-#quit, #help, #sound {
+#quit, #help, #sound, #nosound {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #AFD6C0;
     border: none;
     border-radius: 5px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 8px;
     color: #FFFCF3;
     padding: 5px;
     height: 50px;
     width: 50px;
+}
+
+#nosound {
+    display: none;
 }
 
 #roll {
@@ -52,6 +83,15 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* header */
+header {
+    background-color: #D6DED9;
+    height: 80px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 6px dashed #9BABA2;
 }
 
 /* Slider */
@@ -83,4 +123,97 @@ h2 {
     animation-duration: 60s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+}
+
+/* Start */
+#gamecontrol {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#startgame {
+    background-color: #E9704F;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 80px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFCF3;
+    text-transform: uppercase;
+}
+
+/* Game Functions */
+#roll {
+    background-color: #E9704F;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 80px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFCF3;
+    text-transform: uppercase;
+}
+
+#dicecell {
+    display: flex;
+    margin: 0 auto 10px auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #BDE2CD;
+    padding: 15px;
+    gap: 10px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+img {
+    height: 100px;
+    width: auto;
+}
+
+#playoptions {
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#rollagain {
+    background-color: #E9704F;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFCF3;
+    text-transform: uppercase;
+}
+
+#pass {
+    background-color: #E9704F;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFCF3;
+    text-transform: uppercase;
+}
+
+/* footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #D6B179;
+    border-bottom: 6px solid #BA9A6A;
 }

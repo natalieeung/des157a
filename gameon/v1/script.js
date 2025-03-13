@@ -44,6 +44,8 @@
     };
     
     startGame.addEventListener('click', function(){
+        gameControl.style.display = "none";
+
         //Randomly set the gameData.index here, which will choose the player
         gameData.index = Math.round(Math.random());
         console.log(gameData.index);
@@ -58,8 +60,9 @@
 
     function setUpTurn() {
         //console.log('set up the turn');
+        gameControl
         game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`; /*get player from game data here*/
-        actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
+        actionArea.innerHTML = '<button id="roll">Roll</button>';
         document.querySelector('#roll').addEventListener('click', function() {
             //console.log('Roll the dice!');
             throwDice();
@@ -74,7 +77,7 @@
         //console.log(gameData.roll2);
         game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]
         }</p>`; //Get Player
-        game.innerHTML += `<img src="images/${gameData.dice[gameData.roll1-1]}"> <img src="images/${gameData.dice[gameData.roll2-1]}">`; //Get Dice Images
+        game.innerHTML += `<div id=dicecell><img src="images/${gameData.dice[gameData.roll1-1]}"> <img src="images/${gameData.dice[gameData.roll2-1]}"><div>`; //Get Dice Images
         gameData.rollSum = gameData.roll1 + gameData.roll2;
 
         //if two 1's are rolled
@@ -89,7 +92,7 @@
             showCurrentScore();
 
             //Wait 2 seconds...
-            setTimeout(setUpTurn, 2000);
+            setTimeout(setUpTurn, 3000);
 
         //if either die is a 1
         } else if (gameData.roll1 === 1 | gameData.roll2 === 1) {
@@ -99,13 +102,13 @@
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             game.innerHTML += `<p>Sorry, one of your rolls was a one, switching to ${gameData.players[gameData.index]}</p>`;
             
-            setTimeout(setUpTurn, 2000);
+            setTimeout(setUpTurn, 3000);
 
         //if neither die is a 1...
         } else {
             //console.log('neither die was a 1, game continues...');
             gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
-            actionArea.innerHTML = '<button id="rollagain">Roll again</button> or <button id="pass">Pass</button>';
+            actionArea.innerHTML = '<div id="playoptions"><button id="rollagain">Roll</button><button id="pass">Pass</button><div>';
 
             document.querySelector('#rollagain').addEventListener('click', function() {
                 //setUpTurn(); //You can set up turn again, but you can also just throw dice again
