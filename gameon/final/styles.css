@@ -68,7 +68,43 @@ i {
 #turntext {
     display: none;
 }
+
+#switch {
+    position: absolute;
+    top: 400px;
+    right: 570px;
+}
+
+#win {
+    position: absolute;
+    top: 400px;
+    right: 590px;
+}
+
+#snake {
+    position: absolute;
+    top: 400px;
+    right: 650px;
+}
+
 /* Buttons */
+#newgame {
+    z-index: 50;
+    position: absolute;
+    top: 450px;
+    right: 600px;
+    background-color: #E9704F;
+    border: none;
+    border-radius: 10px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FFFCF3;
+    padding: 10px 20px;
+}
+
+
 #buttons {
     padding: 0px 20px;
     display: flex;

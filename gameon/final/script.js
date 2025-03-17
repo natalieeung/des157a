@@ -139,7 +139,7 @@
         //if two 1's are rolled
         if (gameData.rollSum === 2){
             //console.log('snake eyes');
-            game.innerHTML += '<p>Oh snap! Snake eyes!</p>';
+            game.innerHTML += '<h2 id="snake">Oh snap! Snake eyes!</h2>';
              //zero out the score
             gameData.score[gameData.index] = 0;
             //switch player using ternary operator
@@ -156,7 +156,7 @@
             
             //switch player using ternary operator
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
-            game.innerHTML += `<p>You rolled a <strong>1, switching to ${gameData.players[gameData.index]}</p>`;
+            game.innerHTML += `<h2 id="switch">You rolled a <strong>1, switching to ${gameData.players[gameData.index]}</h2>`;
             
             setTimeout(setUpTurn, 3000);
 
@@ -187,10 +187,13 @@
 
     function checkWinningCondition() {
         if (gameData.score[gameData.index] > gameData.gameEnd) { //current player score > game end points
-            score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2>`;
+            score.innerHTML = `<h2 id="win">${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2><br><button id="newgame">Start a New Game</button>`;
 
             actionArea.innerHTML = '';
-            document.querySelector('#quit').innerHTML = 'Start a new game?';
+            document.querySelector('#newgame').addEventListener('click', function(){
+                clickSound.play();
+                location.reload();
+            });
 
         } else {
             //showCurrentScore() function will go here
