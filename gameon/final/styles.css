@@ -26,6 +26,32 @@ h3 {
     line-height: 0em;
 }
 
+h4 {
+    font-family: "JetBrains Mono", monospace;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #E9704F;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+
+h5 {
+    font-family: "JetBrains Mono", monospace;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #6E8B7A;
+    line-height: 2.0em;
+}
+
+h6 {
+    font-family: "JetBrains Mono", monospace;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #E9704F;
+    line-height: 1em;
+}
+
+
 p {
     font-family: "JetBrains Mono", monospace;
     font-size: 14px;
@@ -39,6 +65,9 @@ i {
     font-size: 18px;
 }
 
+#turntext {
+    display: none;
+}
 /* Buttons */
 #buttons {
     padding: 0px 20px;
@@ -52,7 +81,7 @@ i {
     gap: 5px
 }
 
-#quit, #help, #sound, #nosound {
+#quit, #help, .sound, .nosound {
     display: flex;
     gap: 4px;
     flex-direction: column;
@@ -68,8 +97,11 @@ i {
     height: 50px;
     width: 50px;
 }
+.sound {
+    display: flex;
+}
 
-#nosound {
+.nosound {
     display: none;
 }
 
@@ -133,6 +165,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 50;
 }
 
 #startgame {
@@ -154,7 +187,7 @@ header {
     align-items: center;
     position: absolute;
     top: 50%;
-    right: 50%;
+    right: 30%;
 }
 
 #game {
@@ -162,7 +195,17 @@ header {
     margin: auto;
 }
 
+#rollinst {
+    position: absolute;
+    top: 325px;
+    right: 585px;
+    text-align: center;
+}
+
 #roll {
+    position: absolute;
+    top: 400px;
+    right: 610px;
     background-color: #E9704F;
     border: none;
     border-radius: 10px;
@@ -224,30 +267,54 @@ img {
 }
 
 /* scores */
-#score {
-    display: block;
-    z-index: 12;
-}
-
 #scores {
+    position: absolute;
+    top: 200px;
+    right: 225px;
     display: flex;
     gap: 800px;
     align-items: baseline;
     justify-content: center;
+    z-index: -10;
 }
 
-#scores div {
+#player1, #player2 {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    justify-content: center;
+    margin: auto; 
+    text-align: center; 
+    height: 100%;
+}
+
+#player1 div, #player2 div {
+    display: none;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#player1 div img, #player2 div img {
+    height: 15px;
+    width: auto;
+    max-width: 100%; 
+    object-fit: contain; 
+    flex-shrink: 0; 
+    animation: bounce 1s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
 }
 
 /* footer */
 #diners {
     position: absolute;
     bottom: 15px;
-    left: 13vw;
+    left: 12.5vw;
     display: flex;
     align-items: flex-end;
     justify-content: center; 
