@@ -7,6 +7,10 @@
     const soundOn = document.querySelector('.nosound');
     const gameControl = document.querySelector('#gamecontrol');
     const game = document.querySelector('#game');
+    const help = document.querySelector('#help');
+    const popUp = document.querySelector('#instructions');
+    const overlay = document.querySelector('#overlay');
+    const closePop = document.querySelector('#close');
     const score = document.querySelector('#score');
     const p1Score = document.querySelector('#scores #player1 h4');
     const p2Score = document.querySelector('#scores #player2 h4');
@@ -78,7 +82,18 @@
     //Add the animate class to start animating the slider
     document.querySelector('#slider').classList.add("animate");
 
-    
+    help.addEventListener('click', function(){
+        clickSound.play();
+        popUp.style.display = 'block';
+        overlay.style.display = 'block';
+    })
+
+    closePop.addEventListener('click', function(){
+        clickSound.play();
+        popUp.style.display = 'none';
+        overlay.style.display = 'none';
+    })
+
     startGame.addEventListener('click', function() {
         clickSound.play();
         gameControl.style.display = "none";

@@ -51,6 +51,12 @@ h6 {
     line-height: 1em;
 }
 
+ul li {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    color: #5B1B1B;
+    line-height: 2.0em;
+}
 
 p {
     font-family: "JetBrains Mono", monospace;
@@ -393,4 +399,34 @@ img {
     z-index: -1;
     align-items: flex-end; /* Align everything to the bottom */
     justify-content: center; /* Center the items */
+}
+
+#instructions {
+    position: absolute;
+    top: 100px;
+    right: 450px;
+    z-index: 200;
+    display: none;
+    background-color: #BDE2CD;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    width: 500px;
+}
+
+#instructions div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 180;
 }
