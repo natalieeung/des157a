@@ -207,10 +207,11 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 50;
+    z-index: 100;
 }
 
 #startgame {
+    z-index: 90;
     background-color: #E9704F;
     border: none;
     border-radius: 10px;
@@ -245,6 +246,7 @@ header {
 }
 
 #roll {
+    z-index: 92;
     position: absolute;
     top: 400px;
     right: 610px;
@@ -285,6 +287,7 @@ img {
 }
 
 #rollagain {
+    z-index: 94;
     background-color: #E9704F;
     border: none;
     border-radius: 10px;
@@ -297,6 +300,7 @@ img {
 }
 
 #pass {
+    z-index: 93;
     background-color: #E9704F;
     border: none;
     border-radius: 10px;
